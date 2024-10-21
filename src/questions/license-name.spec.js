@@ -1,4 +1,4 @@
-const askLicenseName = require('./license-name')
+import askLicenseName from './license-name';
 
 describe('askLicenseName', () => {
   it('should return correct question format', () => {

@@ -1,4 +1,4 @@
-const askLicenseUrl = require('./license-url')
+import askLicenseUrl from './license-url';
 
 describe('askLicenseUrl', () => {
   it('should return correct question format', () => {

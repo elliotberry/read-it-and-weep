@@ -1,6 +1,6 @@
-const isNil = require('lodash/isNil')
+import isNil from 'lodash/isNil';
 
-module.exports = projectInfos => ({
+export default projectInfos => ({
   type: 'input',
   message: '📦  Install command (use empty value to skip)',
   name: 'installCommand',
@@ -8,4 +8,4 @@ module.exports = projectInfos => ({
     const packageManager = answers.packageManager || projectInfos.packageManager
     return isNil(packageManager) ? undefined : `${packageManager} install`
   }
-})
+});

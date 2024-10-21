@@ -1,4 +1,4 @@
-const inquirer = require('inquirer')
+import inquirer from 'inquirer';
 
 const question = {
   type: 'list',
@@ -20,7 +20,7 @@ const question = {
 /**
  * Ask users if they want to overwrite the existing README
  */
-module.exports = async () => {
+export default async () => {
   const { overwriteReadme } = await inquirer.prompt([question])
   return overwriteReadme
-}
+};

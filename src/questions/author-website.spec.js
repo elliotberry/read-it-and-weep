@@ -1,5 +1,5 @@
-const fetch = require('node-fetch')
-const askAuthorWebsite = require('./author-website')
+import fetch from 'node-fetch';
+import askAuthorWebsite from './author-website';
 
 jest.mock('node-fetch')
 

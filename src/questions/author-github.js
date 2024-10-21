@@ -1,9 +1,9 @@
-const { cleanSocialNetworkUsername } = require('../utils')
+import {cleanSocialNetworkUsername} from '../utils';
 
-module.exports = projectInfos => ({
+export default projectInfos => ({
   type: 'input',
   message: '👤  GitHub username (use empty value to skip)',
   name: 'authorGithubUsername',
   default: projectInfos.githubUsername,
   filter: cleanSocialNetworkUsername
-})
+});

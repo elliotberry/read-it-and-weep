@@ -1,4 +1,4 @@
-const askUsage = require('./usage')
+import askUsage from './usage';
 
 describe('askUsage', () => {
   it('should return correct question format', () => {

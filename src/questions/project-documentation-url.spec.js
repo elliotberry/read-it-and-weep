@@ -1,4 +1,4 @@
-const askProjectName = require('./project-name')
+import askProjectName from './project-name';
 
 describe('askProjectName', () => {
   it('should return correct question format', () => {

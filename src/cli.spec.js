@@ -1,10 +1,10 @@
-const inquirer = require('inquirer')
-const mainProcess = require('./cli')
-const infos = require('./project-infos')
-const readme = require('./readme')
-const utils = require('./utils')
-const askQuestions = require('./ask-questions')
-const cleanContext = require('./clean-context')
+import inquirer from 'inquirer';
+import mainProcess from './cli';
+import infos from './project-infos';
+import readme from './readme';
+import utils from './utils';
+import askQuestions from './ask-questions';
+import cleanContext from './clean-context';
 
 inquirer.prompt = jest.fn(items =>
   Promise.resolve(

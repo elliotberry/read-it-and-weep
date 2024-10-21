@@ -1,8 +1,8 @@
-const { cleanSocialNetworkUsername } = require('../utils')
+import {cleanSocialNetworkUsername} from '../utils';
 
-module.exports = () => ({
+export default () => ({
   type: 'input',
   message: '🐦  Twitter username (use empty value to skip)',
   name: 'authorTwitterUsername',
   filter: cleanSocialNetworkUsername
-})
+});

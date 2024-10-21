@@ -1,4 +1,4 @@
-const askAuthorGithub = require('./author-github')
+import askAuthorGithub from './author-github';
 
 describe('askAuthorGithub', () => {
   it('should return correct question format', () => {

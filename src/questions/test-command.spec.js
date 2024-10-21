@@ -1,4 +1,4 @@
-const askTestCommand = require('./test-command')
+import askTestCommand from './test-command';
 
 describe('askTestCommand', () => {
   it('should return correct question format', () => {

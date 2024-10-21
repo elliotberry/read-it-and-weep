@@ -1,8 +1,8 @@
-const readme = require('./readme')
-const infos = require('./project-infos')
-const utils = require('./utils')
-const askQuestions = require('./ask-questions')
-const cleanContext = require('./clean-context')
+import readme from './readme';
+import infos from './project-infos';
+import utils from './utils';
+import askQuestions from './ask-questions';
+import cleanContext from './clean-context';
 
 /**
  * Main process:
@@ -16,7 +16,7 @@ const cleanContext = require('./clean-context')
  *
  * @param {Object} args
  */
-module.exports = async ({ customTemplatePath, useDefaultAnswers }) => {
+export default async ({ customTemplatePath, useDefaultAnswers }) => {
   if (!(await readme.checkOverwriteReadme())) return
 
   const templatePath = await readme.getReadmeTemplatePath(
@@ -37,4 +37,4 @@ module.exports = async ({ customTemplatePath, useDefaultAnswers }) => {
   await readme.writeReadme(readmeContent)
 
   utils.showEndMessage()
-}
+};

@@ -1,4 +1,4 @@
-const askProjectVersion = require('./project-version')
+import askProjectVersion from './project-version';
 
 describe('askProjectVersion', () => {
   it('should return correct question format', () => {

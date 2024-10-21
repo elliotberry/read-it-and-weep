@@ -1,7 +1,6 @@
-const inquirer = require('inquirer')
-
-const questions = require('./questions')
-const askQuestions = require('./ask-questions')
+import inquirer from 'inquirer';
+import questions from './questions';
+import askQuestions from './ask-questions';
 
 inquirer.prompt = jest.fn(items =>
   Promise.resolve(

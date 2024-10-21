@@ -1,8 +1,7 @@
-const ora = require('ora')
-const childProcess = require('child_process')
-
-const utils = require('./utils')
-const { getProjectInfos } = require('./project-infos')
+import ora from 'ora';
+import childProcess from 'child_process';
+import utils from './utils';
+import {getProjectInfos} from './project-infos';
 
 jest.mock('ora')
 jest.mock('child_process', () => ({

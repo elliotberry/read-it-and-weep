@@ -1,4 +1,4 @@
-const askProjectPrerequisites = require('./project-prerequisites')
+import askProjectPrerequisites from './project-prerequisites';
 
 describe('askProjectPrerequisites', () => {
   it('should return correct question format', () => {

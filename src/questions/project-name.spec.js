@@ -1,4 +1,4 @@
-const askProjectDocumentationUrl = require('./project-documentation-url')
+import askProjectDocumentationUrl from './project-documentation-url';
 
 describe('askProjectDocumentationUrl', () => {
   it('should return correct question format', () => {

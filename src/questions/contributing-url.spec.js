@@ -1,4 +1,4 @@
-const askContributingUrl = require('./contributing-url')
+import askContributingUrl from './contributing-url';
 
 describe('askContributingUrl', () => {
   it('should return correct question format', () => {

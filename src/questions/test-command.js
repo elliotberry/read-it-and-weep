@@ -1,6 +1,6 @@
-const isNil = require('lodash/isNil')
+import isNil from 'lodash/isNil';
 
-module.exports = projectInfos => ({
+export default projectInfos => ({
   type: 'input',
   message: '✅  Test command (use empty value to skip)',
   name: 'testCommand',
@@ -10,4 +10,4 @@ module.exports = projectInfos => ({
       ? `${packageManager} run test`
       : undefined
   }
-})
+});

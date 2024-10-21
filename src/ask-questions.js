@@ -1,8 +1,7 @@
-const inquirer = require('inquirer')
-const { flatMap } = require('lodash')
-
-const questionsBuilders = require('./questions')
-const utils = require('./utils')
+import inquirer from 'inquirer';
+import {flatMap} from 'lodash';
+import questionsBuilders from './questions';
+import utils from './utils';
 
 /**
  * Ask user questions and return context to generate a README
@@ -10,7 +9,7 @@ const utils = require('./utils')
  * @param {Object} projectInfos
  * @param {Boolean} useDefaultAnswers
  */
-module.exports = async (projectInfos, useDefaultAnswers) => {
+export default async (projectInfos, useDefaultAnswers) => {
   const questions = flatMap(Object.values(questionsBuilders), questionBuilder =>
     questionBuilder(projectInfos)
   )
@@ -26,4 +25,4 @@ module.exports = async (projectInfos, useDefaultAnswers) => {
     isProjectOnNpm: utils.isProjectAvailableOnNpm(answersContext.projectName),
     ...answersContext
   }
-}
+};

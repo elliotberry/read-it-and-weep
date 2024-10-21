@@ -1,6 +1,5 @@
-const inquirer = require('inquirer')
-
-const askOverwrite = require('./ask-overwrite')
+import inquirer from 'inquirer';
+import askOverwrite from './ask-overwrite';
 
 const expectedQuestion = {
   type: 'list',

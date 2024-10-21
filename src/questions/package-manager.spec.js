@@ -1,4 +1,4 @@
-const askPackageManager = require('./package-manager')
+import askPackageManager from './package-manager';
 
 const expectedQuestion = {
   type: 'list',

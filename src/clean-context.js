@@ -3,7 +3,7 @@
  *
  * @param {Object} context
  */
-module.exports = context => {
+export default context => {
   const cleanBadgeText = text => text.replace(/-/g, '--').replace(/_/g, '__')
 
   // Why doing this?
@@ -18,4 +18,4 @@ module.exports = context => {
     licenseName,
     projectVersion
   }
-}
+};

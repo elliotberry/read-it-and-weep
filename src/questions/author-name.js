@@ -1,6 +1,6 @@
-module.exports = projectInfos => ({
+export default projectInfos => ({
   type: 'input',
   message: '👤  Author name',
   name: 'authorName',
   default: projectInfos.author
-})
+});

@@ -1,15 +1,15 @@
-const isNil = require('lodash/isNil')
-const get = require('lodash/get')
-const has = require('lodash/has')
-const ora = require('ora')
-const { execSync } = require('child_process')
+import isNil from 'lodash/isNil';
+import get from 'lodash/get';
+import has from 'lodash/has';
+import ora from 'ora';
+import {execSync} from 'child_process';
 
-const {
+import {
   getPackageJson,
   getProjectName,
   getAuthorWebsiteFromGithubAPI,
-  getPackageManagerFromLockFile
-} = require('./utils')
+  getPackageManagerFromLockFile,
+} from './utils';
 
 const GITHUB_URL = 'https://github.com/'
 
@@ -185,6 +185,6 @@ const getProjectInfos = async () => {
   }
 }
 
-module.exports = {
+export default {
   getProjectInfos
-}
+};

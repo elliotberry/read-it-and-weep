@@ -1,4 +1,4 @@
-const askAuthorName = require('./author-name')
+import askAuthorName from './author-name';
 
 describe('askAuthorName', () => {
   it('should return correct question format', () => {

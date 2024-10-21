@@ -1,5 +1,5 @@
 /* eslint-disable global-require */
-module.exports = {
+export default {
   askProjectName: require('./project-name'),
   askProjectVersion: require('./project-version'),
   askProjectDescription: require('./project-description'),
@@ -21,4 +21,4 @@ module.exports = {
   askInstallCommand: require('./install-command'),
   askUsage: require('./usage'),
   askTestCommand: require('./test-command')
-}
+};

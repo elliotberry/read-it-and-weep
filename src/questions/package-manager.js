@@ -1,6 +1,6 @@
-const isEmpty = require('lodash/isEmpty')
+import isEmpty from 'lodash/isEmpty';
 
-module.exports = projectInfos => ({
+export default projectInfos => ({
   type: 'list',
   message: '📦  Choose Package Manager ',
   name: 'packageManager',
@@ -15,4 +15,4 @@ module.exports = projectInfos => ({
     }
   ],
   when: () => projectInfos.isJSProject && isEmpty(projectInfos.packageManager)
-})
+});

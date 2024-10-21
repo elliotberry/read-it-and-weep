@@ -1,6 +1,6 @@
-const { getAuthorWebsiteFromGithubAPI } = require('../utils')
+import {getAuthorWebsiteFromGithubAPI} from '../utils';
 
-module.exports = projectInfos => ({
+export default projectInfos => ({
   type: 'input',
   message: '🏠  Author website (use empty value to skip)',
   name: 'authorWebsite',
@@ -8,4 +8,4 @@ module.exports = projectInfos => ({
     answers.authorGithubUsername !== projectInfos.githubUsername
       ? getAuthorWebsiteFromGithubAPI(answers.authorGithubUsername)
       : projectInfos.authorWebsite
-})
+});

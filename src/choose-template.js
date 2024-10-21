@@ -1,7 +1,7 @@
-const inquirer = require('inquirer')
-const path = require('path')
+import inquirer from 'inquirer';
+import path from 'path';
 
-module.exports = async useDefaultAnswers => {
+export default async useDefaultAnswers => {
   const defaultTemplate = path.resolve(__dirname, '../templates/default.md')
   const defaultNoHtmlTemplate = path.resolve(
     __dirname,
@@ -30,4 +30,4 @@ module.exports = async useDefaultAnswers => {
   const { templatePath } = await inquirer.prompt([question])
 
   return templatePath
-}
+};

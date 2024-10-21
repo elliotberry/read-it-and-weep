@@ -1,6 +1,6 @@
-module.exports = projectInfos => ({
+export default projectInfos => ({
   type: 'input',
   message: '🤝  Contributing guide url (use empty value to skip)',
   name: 'contributingUrl',
   default: projectInfos.contributingUrl
-})
+});

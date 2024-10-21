@@ -1,8 +1,8 @@
-const fs = require('fs')
-const ora = require('ora')
-const path = require('path')
-const chooseTemplate = require('./choose-template')
-const askOverwriteReadme = require('./ask-overwrite')
+import fs from 'fs';
+import ora from 'ora';
+import path from 'path';
+import chooseTemplate from './choose-template';
+import askOverwriteReadme from './ask-overwrite';
 
 const defaultTemplatePath = path.resolve(__dirname, '../templates/default.md')
 const defaultNoHtmlTemplatePath = path.resolve(
@@ -11,13 +11,13 @@ const defaultNoHtmlTemplatePath = path.resolve(
 )
 chooseTemplate.mockReturnValue(defaultTemplatePath)
 
-const {
+import {
   writeReadme,
   buildReadmeContent,
   README_PATH,
   getReadmeTemplatePath,
-  checkOverwriteReadme
-} = require('./readme')
+  checkOverwriteReadme,
+} from './readme';
 
 describe('readme', () => {
   const succeed = jest.fn()

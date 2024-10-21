@@ -1,5 +1,5 @@
-const isEmpty = require('lodash/isEmpty')
-const isNil = require('lodash/isNil')
+import isEmpty from 'lodash/isEmpty';
+import isNil from 'lodash/isNil';
 
 /**
  * Return engines as formatted choices
@@ -26,10 +26,10 @@ const buildFormattedChoices = engines =>
 const hasProjectInfosEngines = projectInfos =>
   !isNil(projectInfos.engines) && !isEmpty(projectInfos.engines)
 
-module.exports = projectInfos => ({
+export default projectInfos => ({
   type: 'checkbox',
   message: '⚠️  Project prerequisites',
   name: 'projectPrerequisites',
   choices: buildFormattedChoices(projectInfos.engines),
   when: () => hasProjectInfosEngines(projectInfos)
-})
+});
