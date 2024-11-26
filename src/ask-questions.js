@@ -1,7 +1,7 @@
 import inquirer from 'inquirer';
 import {flatMap} from 'lodash';
-import questionsBuilders from './questions';
-import utils from './utils';
+import questionsBuilders from './questions.js';
+import utils from './utils.js';
 
 /**
  * Ask user questions and return context to generate a README

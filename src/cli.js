@@ -1,8 +1,8 @@
-import readme from './readme';
-import infos from './project-infos';
+import readme from './readme.js';
+import infos from './project-infos.js';
 import utils from './utils';
-import askQuestions from './ask-questions';
-import cleanContext from './clean-context';
+import askQuestions from './ask-questions.js';
+import cleanContext from './clean-context.js';
 
 /**
  * Main process:

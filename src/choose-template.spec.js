@@ -1,6 +1,6 @@
 import inquirer from 'inquirer';
 import path from 'path';
-import chooseTemplate from './choose-template';
+import chooseTemplate from './choose-template.js';
 
 const defaultTemplatePath = path.resolve(__dirname, '../templates/default.md')
 const defaultNoHtmlTemplatePath = path.resolve(

@@ -1,10 +1,10 @@
 import inquirer from 'inquirer';
-import askOverwrite from './ask-overwrite';
+import askOverwrite from './ask-overwrite.js';
 
 const expectedQuestion = {
   type: 'list',
   message:
-    '🚨  readme-md-generator will overwrite your current README.md. Are you sure you want to continue? ',
+    'readme-md-generator will overwrite your current README.md. Are you sure you want to continue? ',
   name: 'overwriteReadme',
   choices: [
     {

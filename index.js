@@ -2,7 +2,7 @@
 
 import yargs from 'yargs';
 import {noop} from 'lodash';
-import mainProcess from './src/cli';
+import mainProcess from './src/cli.js';
 
 yargs
   .usage('Usage: $0 <command> [options]')

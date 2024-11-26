@@ -1,5 +1,5 @@
 import inquirer from 'inquirer';
-import path from 'path';
+import path from 'node:path';
 
 export default async useDefaultAnswers => {
   const defaultTemplate = path.resolve(__dirname, '../templates/default.md')

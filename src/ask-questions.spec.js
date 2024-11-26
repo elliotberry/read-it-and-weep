@@ -1,6 +1,6 @@
 import inquirer from 'inquirer';
-import questions from './questions';
-import askQuestions from './ask-questions';
+import questions from './questions.js';
+import askQuestions from './ask-questions.js';
 
 inquirer.prompt = jest.fn(items =>
   Promise.resolve(
